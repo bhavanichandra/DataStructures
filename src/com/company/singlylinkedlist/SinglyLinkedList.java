@@ -11,10 +11,6 @@ public class SinglyLinkedList {
         this.head = null;
     }
 
-    public Node getHead() {
-        return head;
-    }
-
     public boolean isEmpty(){
         return (head==null);
     }
