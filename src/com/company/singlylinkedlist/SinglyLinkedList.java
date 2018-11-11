@@ -96,6 +96,25 @@ public class SinglyLinkedList {
         return current;
     }
     public void insertAtPosition(int data, int position){
-        
+
+        Node newNode = new Node(data);
+        if(position == 0){
+            insertAtHead(data);
+        }
+        else {
+            Node current = head;
+            Node previous = head;
+            int i = 0;
+            while (i < position) {
+                previous = current;
+                current = current.getNext();
+                if (current == null) {
+                    break;
+                }
+                i++;
+            }
+            newNode.setNext(current);
+            previous.setNext(newNode);
+        }
     }
 }

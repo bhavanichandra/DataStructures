@@ -15,6 +15,9 @@ public class Main {
         System.out.println("-----------------");
         linkedList.removeData(21);
         linkedList.print();
+        System.out.println("-----------------");
+        linkedList.insertAtPosition(21, 1);
+        linkedList.print();
         System.out.println(linkedList.search(21) + " was found in linked list");
 
     }
