@@ -1,4 +1,5 @@
-package com.company.singlylinkedlist;/*
+package com.company.singlylinkedlist;
+/*
 author: Bhavani Chandra
 */
 
